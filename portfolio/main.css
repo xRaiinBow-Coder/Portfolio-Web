@@ -1,5 +1,5 @@
 html {
-    scroll-snap-type: proximity;
+    scroll-snap-type: y proximity;
 }
 
 .Nav {
@@ -50,6 +50,7 @@ html {
 
 section {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .one {
