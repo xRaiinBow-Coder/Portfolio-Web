@@ -1,0 +1,95 @@
+html {
+    scroll-snap-type: proximity;
+}
+
+.Nav {
+    position: fixed;
+    font-size: medium;
+    font-weight: 450;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px 2px red;
+
+} 
+
+.Nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;  
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 5;
+    text-align: center;
+} 
+
+.Nav li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: transparent;
+ 
+} 
+
+.Nav li a {
+    display: block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: white;
+    border-radius: 45px;
+} 
+
+.Nav li a:hover {
+    color: red;
+    transform: rotate(0deg) skew(0deg) translate(0, -3px);
+}
+
+
+section {
+    height: 100vh;
+}
+
+.one {
+    background-color: white;
+}
+
+.me {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    
+}
+
+.me img:nth-child(1){
+    border-radius: 30%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    
+}
+
+.me img:nth-child(1):hover {
+    border-color: solid red;
+    box-shadow: 0px 0px 0px 3px red;
+    
+
+}
+
+.title {
+    position: absolute;
+    left: 40%;
+    
+}
+
+.two {
+    background-color: lightblue;
+    scroll-snap-align: top;
+}
