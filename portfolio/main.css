@@ -175,3 +175,22 @@ span:hover {
         transform: translateY(-10px);
     }
 }
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+    animation: move 5s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(50px) translateX(50px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
