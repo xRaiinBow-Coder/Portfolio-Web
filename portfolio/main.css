@@ -14,7 +14,7 @@ html {
     padding: 5px 0;
     box-shadow: 2px 2px 2px 2px red;
     display: none;
-    animation: fadeIn ease 1.5s;
+    animation: fadeIn ease-in 0.5s;
 } 
 
 @keyframes fadeIn {
@@ -76,11 +76,10 @@ section {
 body .one {
     background: black;
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-behavior: auto;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 body .two{
@@ -88,6 +87,7 @@ body .two{
     scroll-snap-align: top;
     min-height: 100vh;
     width: 100%;
+
 }
 
 
@@ -100,6 +100,7 @@ body .two{
     background-color: transparent;
     z-index: 1;
     width: 100%;
+
     
 }
 
@@ -108,6 +109,7 @@ body .two{
     max-width: 100%;
     height: auto;
     z-index: 1;
+    border: solid red;
     box-shadow: '0px 0px 0px 3px red';
     transition: box-shadow 0.1 ease, border-color 0.1 ease;
 }
@@ -119,22 +121,22 @@ body .two{
 
 @keyframes rainbow {
     0% {
-        box-shadow: 0 0 20px #8c00fc;
+        box-shadow: 0 0 40px #8c00fc;
     }
     20% {
-        box-shadow: 0 0 20px #3500ff;
+        box-shadow: 0 0 30px #3500ff;
     }
     40% {
-        box-shadow: 0 0 20px #01fe01;
+        box-shadow: 0 0 40px #01fe01;
     }
     60% {
-        box-shadow: 0 0 20px #fffe37;
+        box-shadow: 0 0 30px #fffe37;
     }
     80% {
-        box-shadow: 0 0 20px #ff8600;
+        box-shadow: 0 0 40px #ff8600;
     }
     100% {
-        box-shadow: 0 0 20px #ed0003;
+        box-shadow: 0 0 30px #ed0003;
     }
 }
 
@@ -196,3 +198,112 @@ span:hover {
     mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.m {
+    position: relative;
+    font-size: 4rem;
+    margin-top: 70px;
+}
+
+.buttons { 
+    display: grid;
+    border: none;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+#JS {
+    width: 180px;
+    height: 180px;
+    transition-delay: 200ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/JavaScript.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    opacity: 1;
+
+}
+
+
+#Python {
+    width: 180px;
+    height: 180px;
+    transition-delay: 300ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/Python.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+
+}
+#Php {
+    width: 180px;
+    height: 180px;
+    padding: 60px 60px;
+    transition-delay: 400ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/php.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+#SQL {
+    width: 180px;
+    height: 180px;
+    padding: 60px 60px;
+    transition-delay: 500ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/SQL.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+#Html {
+    width: 180px;
+    height: 180px;
+    padding: 60px 60px;
+    transition-delay: 600ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/HTML.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+#Github {
+    width: 180px;
+    height: 180px;
+    padding: 60px 60px;
+    transition-delay: 700ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/git.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+#BootStrap {
+    width: 180px;
+    height: 180px;
+    padding: 60px 60px;
+    transition-delay: 800ms;
+    box-shadow: -2px 2px red;
+    margin-left: 80px;
+    background-image: url(pictures/BOOTSTRAP.png);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}

@@ -1,39 +1,28 @@
-window.addEventListener('scroll', () => {
-    const nav = document.getElementById('nav');
-    const sectionTwo = document.getElementById('two');
-    const sectionOne = document.getElementById('one');
-    
-    const sectionTwoTop = sectionTwo.getBoundingClientRect().top;
-    const sectionOneBottom = sectionOne.getBoundingClientRect().bottom;
-    const viewportHeight = window.innerHeight;
-
-    if (sectionOneBottom <= 0 && sectionTwoTop <= viewportHeight) {
-        nav.style.display = 'block'; 
-    } else {
-        nav.style.display = 'none'; 
-    }
-});
 
 document.addEventListener('DOMContentLoaded', function() {
     var element = document.querySelector('.down');
     element.classList.add('bounce');
 })
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     var element = document.getElementById('he');
 
     element.addEventListener('mouseover', () => {
+        element.style.border = "";
         element.style.boxShadow = "";
+
         element.classList.add("rainbow")
     })
 
     element.addEventListener('mouseout', () => {
         element.classList.remove('rainbow');
-        element.style.boxShadow = '0px 0px 0px 3px red';
     })
 
     
 })
+
 
 function createStar() {
     let size = Math.random() * 10 + 10;
@@ -74,4 +63,18 @@ function multiple(count) {
 
 multiple(100);
 setInterval(() => multiple(10), 500);
+
+
+const observer = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+       if (entry.isIntersecting) {
+           entry.target.classList.add('show');
+       } else {
+           entry.target.classList.remove('show');
+       }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.buttons');
+hiddenElements.forEach((el) => observer.observe(el));
 
