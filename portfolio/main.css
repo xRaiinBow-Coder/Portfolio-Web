@@ -231,15 +231,19 @@ span:hover {
     width: 180px;
     height: 180px;
     transition-delay: 200ms;
-    box-shadow: -2px 2px red;
+    box-shadow: -4px 4px yellow;
     margin-left: 80px;
     background-image: url(pictures/JavaScript.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
     opacity: 1;
-
+    transition: 0.1s;
 }
 
+#JS:hover {
+    background-image: none;
+    background-color: yellow;
+}
 
 #Python {
     width: 180px;
@@ -250,8 +254,15 @@ span:hover {
     background-image: url(pictures/Python.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 0.1s;
 
 }
+
+#Python:hover {
+    background-image: none;
+    background-image: linear-gradient(to bottom right, #357fb9 45%, #ffc42d 55%) 
+}
+
 #Php {
     width: 180px;
     height: 180px;
@@ -262,7 +273,14 @@ span:hover {
     background-image: url(pictures/php.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 0.1s;
 }
+
+#Php:hover {
+    background-image: none;
+    background-color: #777bb3;
+}
+
 #SQL {
     width: 180px;
     height: 180px;
@@ -273,7 +291,14 @@ span:hover {
     background-image: url(pictures/SQL.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 0.1s;
 }
+
+#SQL:hover {
+    background-image: none;
+    background-color: #2270b7;
+}
+
 #Html {
     width: 180px;
     height: 180px;
@@ -284,7 +309,14 @@ span:hover {
     background-image: url(pictures/HTML.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 0.1s;
 }
+
+#Html:hover {
+    background-image: none;
+    background-color: #e54c21;
+}
+
 #Github {
     width: 180px;
     height: 180px;
@@ -295,7 +327,14 @@ span:hover {
     background-image: url(pictures/git.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 0.1s;
 }
+
+#Github:hover {
+    background-image: none;
+    background-color: #101315;
+}
+
 #BootStrap {
     width: 180px;
     height: 180px;
@@ -306,4 +345,10 @@ span:hover {
     background-image: url(pictures/BOOTSTRAP.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    transition: 1s;
+}
+
+#BootStrap:hover {
+    background-image: none;
+    background-image: linear-gradient(to top right,#150737, #5d2e52 );
 }
