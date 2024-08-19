@@ -76,7 +76,7 @@ section {
 body .one {
     background: black;
     height: 100vh;
-    scroll-behavior: auto;
+    scroll-snap-align: top;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -88,6 +88,14 @@ body .two{
     min-height: 100vh;
     width: 100%;
 
+}
+
+body .Three{
+    background-color: #020D19;
+    min-height: 100vh;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -288,7 +296,7 @@ span:hover {
     background-image: none;
     background-color: #777bb3;
     font-size: 2rem;
-     color: white;
+    color: white;
 }
 
 #SQL {
@@ -477,4 +485,17 @@ span:hover {
     background-position: left bottom;
     color: black;
     box-shadow: 6px 6px black;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
 }
