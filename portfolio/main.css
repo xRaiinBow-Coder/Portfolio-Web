@@ -83,7 +83,7 @@ body .one {
 }
 
 body .two{
-    background-color: white;
+    background-color: #101720;
     scroll-snap-align: top;
     min-height: 100vh;
     width: 100%;
@@ -109,8 +109,7 @@ body .two{
     max-width: 100%;
     height: auto;
     z-index: 1;
-    border: solid red;
-    box-shadow: '0px 0px 0px 3px red';
+    box-shadow: 0px 0px 0px 3px red;
     transition: box-shadow 0.1 ease, border-color 0.1 ease;
 }
 
@@ -207,6 +206,7 @@ span:hover {
     position: relative;
     font-size: 4rem;
     margin-top: 70px;
+    color: white;
 }
 
 .buttons { 
@@ -233,16 +233,20 @@ span:hover {
     transition-delay: 200ms;
     box-shadow: -4px 4px yellow;
     margin-left: 80px;
+    background-color: black;
     background-image: url(pictures/JavaScript.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
+    font-size: 0px;
     opacity: 1;
     transition: 0.1s;
 }
 
+
 #JS:hover {
     background-image: none;
     background-color: yellow;
+    font-size: 2rem;
 }
 
 #Python {
@@ -250,7 +254,9 @@ span:hover {
     height: 180px;
     transition-delay: 300ms;
     box-shadow: -2px 2px red;
+    background-color: black;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/Python.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
@@ -260,7 +266,8 @@ span:hover {
 
 #Python:hover {
     background-image: none;
-    background-image: linear-gradient(to bottom right, #357fb9 45%, #ffc42d 55%) 
+    background-image: linear-gradient(to bottom right, #357fb9 45%, #ffc42d 55%); 
+    font-size: 2rem;
 }
 
 #Php {
@@ -270,6 +277,7 @@ span:hover {
     transition-delay: 400ms;
     box-shadow: -2px 2px red;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/php.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
@@ -279,6 +287,8 @@ span:hover {
 #Php:hover {
     background-image: none;
     background-color: #777bb3;
+    font-size: 2rem;
+     color: white;
 }
 
 #SQL {
@@ -288,6 +298,7 @@ span:hover {
     transition-delay: 500ms;
     box-shadow: -2px 2px red;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/SQL.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
@@ -297,6 +308,8 @@ span:hover {
 #SQL:hover {
     background-image: none;
     background-color: #2270b7;
+    font-size: 2rem;
+    color: white;
 }
 
 #Html {
@@ -306,6 +319,7 @@ span:hover {
     transition-delay: 600ms;
     box-shadow: -2px 2px red;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/HTML.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
@@ -315,6 +329,8 @@ span:hover {
 #Html:hover {
     background-image: none;
     background-color: #e54c21;
+    font-size: 2rem;
+    color: white;
 }
 
 #Github {
@@ -324,6 +340,7 @@ span:hover {
     transition-delay: 700ms;
     box-shadow: -2px 2px red;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/git.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
@@ -333,6 +350,8 @@ span:hover {
 #Github:hover {
     background-image: none;
     background-color: #101315;
+    font-size: 2rem;
+    color: white;
 }
 
 #BootStrap {
@@ -342,13 +361,120 @@ span:hover {
     transition-delay: 800ms;
     box-shadow: -2px 2px red;
     margin-left: 80px;
+    font-size: 0px;
     background-image: url(pictures/BOOTSTRAP.png);
     background-repeat: no-repeat;
     background-size: 180px 180px;
-    transition: 1s;
+    transition: 0.1s;
+
 }
 
 #BootStrap:hover {
     background-image: none;
     background-image: linear-gradient(to top right,#150737, #5d2e52 );
+    font-size: 2rem;
+    font-size: large;
+    color: white;
+}
+
+.Me {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.box1 {
+    font-size: large;
+    border: solid black;
+    box-shadow: -4px 4px red;
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    margin-right: 70px;
+    color: white;
+
+    background: linear-gradient(to right,  #87CEEB 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.box1:hover {
+    background-position: left bottom;
+    color: purple;
+    box-shadow: 6px 6px orange;
+}
+
+
+.box2 {
+    border: solid black;
+    box-shadow: -4px 4px red;
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    margin-right: 70px;
+    color: white;
+
+    background: linear-gradient(to right, #023020 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.box2:hover {
+    background-position: left bottom;
+    color: white;
+    box-shadow: 6px 6px purple;
+}
+
+.box3 {
+    border: solid black;
+    box-shadow: -4px 4px red;
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    margin-right: 70px;
+    color: white;
+
+    background: linear-gradient(to right, white 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.box3:hover {
+    background-position: left bottom;
+    color: green;
+    box-shadow: 6px 6px white;
+}
+
+.box4 {
+    border: solid black;
+    box-shadow: -4px 4px red;
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    margin-right: 70px;
+    color: white;
+
+    background: linear-gradient(to right, rgb(245, 2, 2) 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.box4:hover {
+    background-position: left bottom;
+    color: black;
+    box-shadow: 6px 6px black;
 }
